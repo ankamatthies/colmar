@@ -121,13 +121,20 @@ nav span {
 
 .info-slot {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
   width: 100%;
   height: auto;
 }
 
 .info-right-img {
-  width: 35%
+  display: flex;
+  width: 35%;
+  height: auto;
+}
+
+.info-slot img {
+  height: 100%;
+  width: 100%;
 }
 
 .info-right-text {
