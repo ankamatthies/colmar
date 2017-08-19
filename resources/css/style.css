@@ -1,0 +1,175 @@
+/* General styling */
+
+html {
+  font-size: 18px; /*sets base font size*/
+  font-family: Helvetica;
+}
+
+body {
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+
+
+
+.container {
+  width: 100%;
+  display: flex;
+  border: 1px solid red;
+}
+
+/* header section */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.logo {
+  height: 32px;
+}
+
+header .colmar {
+  font-weight: bold;
+}
+
+header .academy {
+  font-weight: bold;
+  color: grey;
+}
+
+header nav {
+  text-align: right;
+}
+
+nav span {
+  display: inline-block;
+  padding-left: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+/* main banner section */
+
+.main-banner {
+  align-items: center;
+  height: auto;
+
+}
+
+.banner-img {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+.banner-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.banner-text p {
+  background-color: grey;
+  color: white;
+  padding-top: 8px;
+  padding-left: 8px;
+  text-align: center;
+}
+
+/* info section */
+
+.info {
+  height: auto;
+  width: 100%;
+}
+
+.info-left {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.info-right {
+  width: 40%;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-slot {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.info-right-img {
+  width: 35%
+}
+
+.info-right-text {
+  width: 65%
+}
+
+/* learning section */
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+.section-heading {
+  align-items: center;
+  padding-top: 32px;
+  padding botto: 32px;
+}
+
+.learning-slots {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+
+/* exhibition section */
+
+.exhibit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit-video {
+  width: 60%;
+  height: auto;
+}
+
+.exhibit-video video {
+  width: 100%;
+}
