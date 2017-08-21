@@ -12,18 +12,16 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: bold;
+  line-height: 1;
 }
 
 h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
   font-size: 2rem;
 }
 
-
-
+h3 {
+  font-size: 1.3rem;
+}
 
 .container {
   width: 100%;
@@ -37,7 +35,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 64px;
   padding-left: 24px;
   padding-right: 24px;
@@ -85,38 +82,58 @@ nav span {
 }
 
 .banner-text {
-  width: 40%;
+  width: 26%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  padding: 24px;
 }
 
-.banner-text p {
+.banner-text h1 {
+  padding-bottom: 24px;
+}
+
+.banner-text h3 {
+  padding-bottom: 24px;
+}
+
+.banner-text span {
   background-color: grey;
   color: white;
   padding-top: 8px;
-  padding-left: 8px;
+  padding-bottom: 8px;
   text-align: center;
+  text-decoration: none;
 }
 
 /* info section */
 
 .info {
   height: auto;
-  width: 100%;
 }
 
 .info-left {
-  width: 60%;
+  display: flex;
+  flex-direction: column;
   padding: 32px 24px;
+  border: 2px solid red;
+  width: 60%;
+}
+
+
+.info-left-img img {
+  width: 100%;
 }
 
 .info-right {
   width: 40%;
+  height: auto;
   padding-left: 16px;
   display: flex;
   flex-direction: column;
+  border: 2px solid red;
+  padding: 32px 24px;
 }
 
 .info-slot {
@@ -124,21 +141,35 @@ nav span {
   justify-content: flex-start;
   width: 100%;
   height: auto;
+  border: 1px solid red;
+
 }
 
 .info-right-img {
-  display: flex;
-  width: 35%;
   height: auto;
+  max-width: 35%;
+  border: 1px solid black;
+  padding: 16px 16px;
 }
 
-.info-slot img {
-  height: 100%;
-  width: 100%;
+.info-right-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 1px solid black;
 }
 
 .info-right-text {
-  width: 65%
+  width: 65%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.info-right-text .readmore {
+  padding-top: 8px;
 }
 
 /* learning section */
@@ -146,37 +177,103 @@ nav span {
 .learning {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  margin-left: 72px;
-  margin-right: 72px;
 }
 
 .section-heading {
-  align-items: center;
   padding-top: 32px;
-  padding botto: 32px;
+  padding-bottom: 32px;
+  align-content: center;
 }
 
 .learning-slots {
   display: flex;
   flex-wrap: wrap;
-  height: auto;
+  align-items: center;
+  margin-left: 72px;
+  margin-right: 72px;
 }
+
+.learning-slot {
+  height: auto;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  border: 1px solid red;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.learning-slot-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.learning-slot-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+
 
 
 /* exhibition section */
 
 .exhibit {
   width: 100%;
+}
+
+.exhibit-left {
   display: flex;
   flex-direction: column;
+  width: 60%;
 }
 
 .exhibit-video {
-  width: 60%;
+  width: 100%;
   height: auto;
 }
 
 .exhibit-video video {
   width: 100%;
+}
+
+.exhibit-right {
+  width: 40%;
+  height: auto;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+
+.exhibit-slot {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+
+}
+
+.exhibit-right-img {
+  height: auto;
+  max-width: 35%;
+  padding: 16px 16px;
+}
+
+.exhibit-right-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.exhibit-right-text {
+  width: 65%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border: 1px solid black;
 }
