@@ -1,8 +1,8 @@
 3.556rem/* General styling */
 
 html {
-  font-size: 10.4444rem; /*sets base font size*/
-  font-family: 'Open Sans', sans-serif;
+  font-size: 18px; /*sets base font size*/
+  font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -13,12 +13,12 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h2 {
   font-size: 1.7rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
 
@@ -43,13 +43,18 @@ p {
 
 /* regular header */
 
+
 .reg_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.556rem;
+  height: 3.889rem;
   padding-left: 1.333rem;
   padding-right: 1.333rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
 }
 
 .mobile_nav {
@@ -63,6 +68,14 @@ p {
   align-items: center;
 }
 
+.logo img {
+  height: 3.333rem;
+}
+
+.logo span {
+  font-size: 1.333rem;
+}
+
 header .colmar {
   font-weight: bold;
 }
@@ -74,18 +87,22 @@ header .academy {
 
 header nav {
   text-align: right;
-  padding-right: 1.333rem;
+  margin-right: 1.333rem;
 }
 
 nav span {
   display: inline-block;
-  padding-left: 0.88rem;
-  color: black;
 }
 
 nav span a {
   text-decoration: none;
   color: grey;
+  font-size: 1.333rem;
+  padding-right: 0.5556rem;
+}
+
+header nav:hover {
+  color: blue;
 }
 
 /* mobile header */
@@ -127,22 +144,24 @@ nav span a {
 .banner-text span {
   display: flex;
   justify-content: center;
-  background-color: #3A404B;
+  background-color: #c2cdda;
   padding-top: 0.44rem;
   padding-bottom: 0.44rem;
   text-decoration: none;
   border-radius: 0.27rem;
-  transition: background-color 300ms;
-  width: 80%;
+  width: 60%;
 }
-
-
 
 .banner-text span a {
   text-decoration: none;
-  color: white;
+  color: #3A404B;
 }
 
+.banner-text a:hover {
+  color: darkblue;
+}
+
+.banner-text a
 /* info section */
 
 .info {
@@ -218,6 +237,10 @@ nav span a {
   padding-left: 2rem;
 }
 
+.info-right-text a:hover {
+  color: darkblue;
+}
+
 .info-right-text p {
   padding-top: 0.4444rem;
   padding-bottom: 0.4444rem;
@@ -276,7 +299,7 @@ nav span a {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  padding-top: ;
+  padding-top: 1.333rem;
   padding-left: 0.8889rem;
 }
 
@@ -295,6 +318,9 @@ nav span a {
   padding-bottom: 1.333rem;
 }
 
+.learning-slot-text a:hover {
+  color: darkblue;
+}
 
 /* exhibition section */
 
@@ -401,6 +427,23 @@ footer nav {
 
 @media only screen and (max-width: 870px) {
 
+p {
+  font-size: 1.444rem;
+}
+
+h3 {
+  font-size: 1.667rem;
+}
+
+h4 {
+  font-size: 1.667rem;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+}
+
 /*header */
 .reg_nav {
   display: none;
@@ -408,13 +451,19 @@ footer nav {
 
 .mobile_nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 3.556rem;
+  background-color: #c2cdda;
 }
 
 .mobile_nav span {
   display: inline;
+}
+
+.mobile_nav nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 /* main banner section */
@@ -427,6 +476,7 @@ footer nav {
 
 .banner-img {
   width: 100%;
+  padding: 0;
 }
 
 .banner-text {
